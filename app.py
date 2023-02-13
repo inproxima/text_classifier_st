@@ -26,7 +26,6 @@ st.markdown("""---""")
 st.subheader("1. Please Enter you OpenAI API key")
 url = "https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key"
 api = st.text_input("If you don't know your OpenAI API key click [here](%s)." % url, type="password", placeholder="Your API Key")
-st.write("If you don't know your OpenAI API key click [here](%s" % url)
 st.markdown("""---""")
 st.subheader("2. Please input the required informaiton:")
 classifiers =st.text_input("Please identify your classifers.👇")
