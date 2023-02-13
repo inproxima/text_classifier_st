@@ -51,7 +51,7 @@ if st.button("Classify!"):
     
     #AI computation backend
     if docx_file is not None:
-        with st.spinner(text="Processing..."):
+        with st.spinner(text="Classify with ease, AI, do as I please..."):
                 lines = docx_file.split("\n")
                 with open('output.csv', 'w', newline='') as csvfile:
                     writer = csv.writer(csvfile)
@@ -60,7 +60,7 @@ if st.button("Classify!"):
                         response = openai.Completion.create(
                             engine="text-davinci-003",
                             prompt=(f"Is the following text related to or involve {classifiers}? {line}"),
-                            max_tokens=70,
+                            max_tokens=30,
                             temperature=0.2,
                             top_p=1,
                             frequency_penalty=1,
